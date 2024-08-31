@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Weather App</h1>
+    <div class="search__container">
+      <div class="autocomplete-container">
+        <input
+          type="text"
+          id="autoCompleteInput"
+          class="autocomplete-input"
+          placeholder="Ingresa un país o ciudad"
+          autocomplete="off"
+        />
+        <div
+          id="autocompleteList"
+          class="autocomplete-list"
+          style="display: none"
+        >
+          <!-- Aquí se llenarán las sugerencias -->
+        </div>
+      </div>
+      <button id="searchBtn" class="search__btn">
+        <img src="/img/search.svg" alt="" srcset="" />
+      </button>
+    </div>
+    <div id="requestContainer" class="weather__card">
+      <div class="card__adressName" id="adressName">Esperando busqueda</div>
+      <div class="card__celsius">
+        <img
+          src="/img/thermostat.svg"
+          class="thermostat"
+          alt="thermostat"
+          srcset=""
+        /><span id="actualText">-</span>ºC
+      </div>
+      <div class="card__minmax">
+        <div class="min">
+          <img src="/img/cold.svg" alt="" srcset="" />
+          <span id="minText">-</span>ºC
+        </div>
+        <div class="max">
+          <img src="/img/sun.svg" alt="" srcset="" />
+          <span id="maxText">-</span>ºC
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
